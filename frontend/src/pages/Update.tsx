@@ -149,7 +149,8 @@ export default function Update() {
                     </div>
 
                     <label className='text-black dark:text-white text-4xl'>Update Description:</label>
-                    <JoditEditor ref={editor} value={content} onChange={(newContent) => setContent(newContent)} />
+                    <div className='text-black'> <JoditEditor ref={editor} value={content} onChange={(newContent) => setContent(newContent)} /></div>
+                   
 
                     <button
                         onClick={handleUpdate}
