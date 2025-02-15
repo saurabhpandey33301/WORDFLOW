@@ -16,7 +16,7 @@ export const Inputbox = ({label,placeholder , onChange ,type ,inputVal } : Input
             {label}:
             <br />
             <input value={inputVal} onChange={onChange}  type={type || "text" } placeholder ={placeholder}  className="border-black dark:border-white p-2 mt-2 pr-20 
-            rounded-md text-black dark:text-white border-2 focus:border-black focus:dark:border-lime-400   outline-none " />
+            rounded-md text-black dark:text-white border-2 focus:border-black focus:dark:border-lime-400 w-full  outline-none " />
         </label> <br />
         </div >
     )

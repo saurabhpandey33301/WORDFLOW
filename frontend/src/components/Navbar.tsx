@@ -50,7 +50,7 @@ export const Navbar = ()=>{
     return (
         <>
           <div className="w-full border-b-2 rounded-lg border-black dark:border-white bg-neutral-50
-           dark:bg-slate-700 p-2 text-white grid grid-cols-3 dark:hover-shadow-md dark:hover-shadow-neutral-50/50 pb-2 m-1">
+           dark:bg-slate-700 p-2 text-white grid grid-cols-3 dark:hover-shadow-md dark:hover-shadow-neutral-50/50 pb-2 ">
             <div className="grid grid-cols-2">
               <Link to={"/home"}>
               <div className="flex">
@@ -106,7 +106,7 @@ export const Navbar = ()=>{
     const ChipTabs = ({ tabs }: { tabs: Array<{ label: string; path: string }> }) => {
       const location = useLocation();
       return (
-        <div className="  pt-2 flex-wrap gap-2 hidden md:block">
+        <div className="  pt-2 flex-wrap gap-2 hidden xl:block">
           {tabs.map((tab) => (
             <Chip
               key={tab.label}

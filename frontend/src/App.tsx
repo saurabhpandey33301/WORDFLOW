@@ -31,7 +31,10 @@ function App() {
        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme" >
        
        <BrowserRouter>
-                <Navbar />
+                 <div className='bg-white dark:bg-gray-700'>
+                   <Navbar />
+
+                 </div>
                 <div className='bg-white dark:bg-gray-700 w-full h-screen'>
                       <Suspense fallback={ <Loading/>  } >
                           <Routes>

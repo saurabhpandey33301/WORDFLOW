@@ -73,7 +73,7 @@ export const SignSec = () => {
               <ToastContainer position="bottom-right" autoClose={2000} />
             <div className="flex flex-col pt-4 pb-2">
                 <div className="flex items-center justify-center">
-                    <div className="p-4 m-2 items-center">
+                    <div className="items-center">
                         <div className="transform -translate-y-6 text-3xl text-black dark:text-lime-400 text-center font-bold">
                             Sign In
                         </div>

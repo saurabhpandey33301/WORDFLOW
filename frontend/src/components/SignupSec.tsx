@@ -1,79 +1,4 @@
 
-// import { Inputbox } from "../subComponents/Inputbox";
-// import { Loginbtn } from "../subComponents/Loginbtn";
-// import { Footer } from "../subComponents/Footer";
-// import { SignupInput } from "blogzod-common";
-// import { useState } from "react";
-// import {BACKEND_URL} from "../../config.ts"
-// import axios from "axios";
-// import { useNavigate } from "react-router-dom";
-
-// export const SignupSec = ()=>{
-//     const [postInputs,setPostInputs] = useState<SignupInput>({
-//             name : "",
-//             email : "",
-//             password : "",
-//         }) 
-//     const navigate = useNavigate();
-//     return(
-//         <div className="flex flex-col  ">
-          
-//         <div className="flex items-center justify-center ">
-//         {/* email is {pass} */}
-//             <div className=" items-center ">
-//                  <div className="text-3xl decoration-8 text-center font-bold text-black dark:text-lime-400">SignUp</div>
-//                  <div className=" tranform translate-y-2 text-center text-black   dark:text-white">Regester here !</div>
-//                  <div>
-//                     <Inputbox inputVal={postInputs.name} onChange={(e)=>{
-//                         setPostInputs({
-//                             ...postInputs,
-//                             name: e.target.value,
-//                         });
-//                     }}
-//                     placeholder={"saurabh pandey"} label={"Name"} />
-
-//                     <Inputbox inputVal={postInputs.email} onChange={(e)=>{
-//                         setPostInputs({
-//                             ...postInputs,
-//                             email: e.target.value,
-//                         });
-//                     }} placeholder={"spandey3301@gmail.com"} label={"Email"} />
-
-//                     <Inputbox inputVal={postInputs.password}  type={"password"} onChange={(e)=>{
-//                         setPostInputs({
-//                             ...postInputs,
-//                             password: e.target.value,
-//                         });
-//                     }} placeholder={"123456"} label={"Pass"} />
-//                     <Loginbtn onClick={async()=>{
-//                         try {
-//                             const res  = await axios.post( `${BACKEND_URL}/api/v1/user/signup`,postInputs)
-//                             const token = res.data;
-//                             localStorage.setItem("token" , token);
-//                             setPostInputs({
-//                                 name: "",
-//                                 email : "",
-//                                 password : ""
-//                             })
-//                             navigate("/blog");
-//                         } catch (error) {
-//                             alert("signup failed")
-//                             console.log(error);
-                            
-//                         }
-//                     }} name={"SignUp"} />
-//                  </div>
-//                  <Footer mssg={"Already have an account?"} liinked={"Login here"} to={"/signin"} />
-//             </div>
-//         </div>
-         
-//         </div>        
-//     )
-// }
-
-
-
-
 import { Inputbox } from "../subComponents/Inputbox";
 import { Loginbtn } from "../subComponents/Loginbtn";
 import { Footer } from "../subComponents/Footer";
@@ -149,7 +74,7 @@ export const SignupSec = () => {
                         <div className="transform translate-y-2 text-center text-black dark:text-white">
                             Register here!
                         </div>
-                        <div>
+                        <div >
                             <Inputbox
                                 inputVal={postInputs.name}
                                 onChange={(e) => setPostInputs({ ...postInputs, name: e.target.value })}
